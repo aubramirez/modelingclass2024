@@ -1,6 +1,6 @@
 //Maya ASCII 2025 scene
 //Name: hammer20513.ma
-//Last modified: Wed, May 15, 2024 11:02:32 AM
+//Last modified: Wed, May 15, 2024 11:10:13 AM
 //Codeset: 1252
 requires maya "2025";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.4.0";
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202402161156-0caf8d1269";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 22631)";
-fileInfo "UUID" "62096A84-4AC4-8FC0-71BF-1ABC01686A33";
+fileInfo "UUID" "1110AE6F-467E-AD97-C106-60B01E9557FE";
 createNode transform -s -n "persp";
 	rename -uid "E7F6780F-4E2D-6F8B-ACEC-DC99803CA49C";
 	setAttr ".v" no;
@@ -370,20 +370,20 @@ createNode mesh -n "hammermeshShape" -p "hammermesh";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "990B94DB-409D-3DD5-49AD-2B8BAF0FD7C1";
+	rename -uid "1AF02703-4B3C-6167-3432-6BA142C00399";
 	setAttr -s 3 ".lnk";
 	setAttr -s 3 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "DF4BA69B-4F52-2B58-1623-F3AA235EF1B4";
+	rename -uid "047158BE-47F6-320E-1184-12B2CA60A093";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "02172B36-4BA9-709D-A3BF-16A157621567";
+	rename -uid "01C9F324-4006-A915-FF05-D1860CC36BC6";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "7F42AD62-4282-7CF4-ADD6-2E86164E57FA";
+	rename -uid "8BC79238-4A95-AEF1-5364-84B5F7041A82";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "D212C792-425A-3A3E-4276-AE9A45D4424D";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "54883135-4C0D-A67A-4D6B-A4BBB447EE91";
+	rename -uid "00DD1B19-4DC7-296C-B6E4-ECA6AFC12177";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "9558DC6B-4DF3-D77C-B129-08BCC6A09F80";
 	setAttr ".g" yes;
@@ -457,7 +457,7 @@ createNode aiAOVDriver -s -n "defaultArnoldDisplayDriver";
 	setAttr ".ai_translator" -type "string" "maya";
 	setAttr ".output_mode" 0;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "979F6AFC-42F0-B442-DBCE-20AD5D53DA4F";
+	rename -uid "8F18DDBD-479E-5669-49CB-A0B47009AFD2";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
@@ -502,6 +502,8 @@ select -ne :defaultColorMgtGlobals;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
+select -ne :ikSystem;
+	setAttr -s 4 ".sol";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "lambert2SG.message" ":defaultLightSet.message";
