@@ -1,6 +1,6 @@
 //Maya ASCII 2025 scene
 //Name: chairunit4.0001.ma
-//Last modified: Mon, May 20, 2024 05:59:15 PM
+//Last modified: Mon, May 20, 2024 06:09:57 PM
 //Codeset: 1252
 requires maya "2025";
 requires "mtoa" "5.4.0";
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202402161156-0caf8d1269";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 22631)";
-fileInfo "UUID" "3C3E5CAE-4456-DA99-2970-4AB6C5604ACB";
+fileInfo "UUID" "C44A87AA-4EAA-1A46-2D2A-F5AA3240A8B2";
 createNode transform -s -n "persp";
 	rename -uid "89FB069B-4546-F9C3-EFEF-578E30BC2AC1";
 	setAttr ".t" -type "double3" -18.677948776426629 2.2606444733018569 -0.3068122126646477 ;
@@ -298,8 +298,8 @@ createNode mesh -n "pCubeShape5" -p "pCube6";
 		0.079871342 0.0057499432 9.2995338e-05;
 createNode transform -n "persp1";
 	rename -uid "842FDFF3-447D-D487-FDED-D0B97E9BA71E";
-	setAttr ".t" -type "double3" -21.677225704662558 5.2595007800262437 16.642517165000243 ;
-	setAttr ".r" -type "double3" -0.3383527304014573 -48.59999999999976 0 ;
+	setAttr ".t" -type "double3" -14.735674408354573 15.426144099417927 34.140370050626608 ;
+	setAttr ".r" -type "double3" -14.738352730202761 338.19999999991353 4.2819106514392838e-16 ;
 createNode camera -n "persp1Shape" -p "persp1";
 	rename -uid "8E8DA24C-4670-8822-C1E4-05BA00EDD682";
 	setAttr -k off ".v";
@@ -307,7 +307,7 @@ createNode camera -n "persp1Shape" -p "persp1";
 	setAttr ".ncp" 0.0032808398950131233;
 	setAttr ".fcp" 328.08398950131232;
 	setAttr ".fd" 0.16404199475065617;
-	setAttr ".coi" 28.707345722956411;
+	setAttr ".coi" 40.628742490389683;
 	setAttr ".ow" 0.32808398950131235;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
@@ -974,7 +974,7 @@ createNode script -n "sceneConfigurationScriptNode";
 	setAttr ".b" -type "string" "playbackOptions -min 1 -max 120 -ast 1 -aet 200 ";
 	setAttr ".st" 6;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "73C5989D-47B1-BA9B-B4A1-70A8E9AAC6FF";
+	rename -uid "FDB97BF8-4211-9A31-CC40-17834A8DB29A";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 77;
