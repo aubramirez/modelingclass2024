@@ -1,6 +1,6 @@
 //Maya ASCII 2025 scene
 //Name: LampTable.ma
-//Last modified: Wed, May 15, 2024 06:25:09 PM
+//Last modified: Mon, May 20, 2024 10:51:32 AM
 //Codeset: 1252
 requires maya "2025";
 requires "mtoa" "5.4.0";
@@ -11,17 +11,17 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202402161156-0caf8d1269";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 22631)";
-fileInfo "UUID" "D446549D-4FD9-A3F7-5F00-F78AC452814D";
+fileInfo "UUID" "F2FD46E6-45BF-8388-ADB9-7B9847A3BCBC";
 createNode transform -s -n "persp";
 	rename -uid "C95ABFF2-4DFC-416C-3114-739B7E708CA9";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -33.662086790704649 9.4472823705015294 -5.9397275635666427 ;
+	setAttr ".t" -type "double3" -28.295727544437906 8.495280020843234 -5.0897797577512653 ;
 	setAttr ".r" -type "double3" -9.9383528495837012 -11259.000000000156 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "BBFB0746-43DE-25E5-D9D2-0FB56BE7805D";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 34.600909449267704;
+	setAttr ".coi" 29.084884494070575;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -1779,7 +1779,7 @@ createNode shadingEngine -n "lambert27SG";
 createNode materialInfo -n "materialInfo32";
 	rename -uid "C78B8CF5-4D5F-4B99-B8B6-FE9AE078EA11";
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "48EF70DC-4AB7-8E57-98E3-C68EBD1C5F50";
+	rename -uid "F77241E1-4C8E-ED67-0FBB-CAABE02B7B55";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
