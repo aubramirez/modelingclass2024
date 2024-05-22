@@ -1,6 +1,6 @@
 //Maya ASCII 2025 scene
 //Name: hammer0520.ma
-//Last modified: Mon, May 20, 2024 09:40:40 PM
+//Last modified: Wed, May 22, 2024 10:38:33 AM
 //Codeset: 1252
 requires maya "2025";
 requires "mtoa" "5.4.0";
@@ -11,12 +11,12 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202402161156-0caf8d1269";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 22631)";
-fileInfo "UUID" "AE875BBF-4CDD-E10F-B4FC-439FAF67CBCA";
+fileInfo "UUID" "B09B0AA2-4ECB-884F-21BD-5EA2257C83ED";
 createNode transform -s -n "persp";
 	rename -uid "A92BA313-426A-E471-7FEE-8493C0AA6A52";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -12.822159284634717 7.9976876181019376 26.013279988248438 ;
-	setAttr ".r" -type "double3" -5.138352729544593 2140.9999999999031 0 ;
+	setAttr ".t" -type "double3" -13.510505540127443 3.6986389140405707 31.794324659885902 ;
+	setAttr ".r" -type "double3" 2.661647270457872 2142.9999999998508 -1.0393374410830177e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "B38A454B-4FC6-4C60-7E85-6BA75CBDEEBF";
 	setAttr -k off ".v" no;
@@ -25,7 +25,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ncp" 0.03937007874015748;
 	setAttr ".fcp" 3937.0078740157478;
 	setAttr ".fd" 1.9685039370078738;
-	setAttr ".coi" 29.688361065562475;
+	setAttr ".coi" 35.318836942133572;
 	setAttr ".ow" 3.9370078740157477;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
@@ -1238,7 +1238,7 @@ createNode shadingEngine -n "lambert6SG";
 createNode materialInfo -n "materialInfo5";
 	rename -uid "6E312813-4209-16EA-ADD7-6DB939F0988E";
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "06367BAF-45A5-6634-55D8-7BA96A6F6A7E";
+	rename -uid "1091C3A3-499A-0CB4-82A6-7A938DF1DF7F";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
