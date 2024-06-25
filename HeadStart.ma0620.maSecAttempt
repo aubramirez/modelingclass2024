@@ -1,6 +1,6 @@
 //Maya ASCII 2025 scene
 //Name: HeadStart.ma0620.maSecAttempt
-//Last modified: Thu, Jun 20, 2024 09:08:25 PM
+//Last modified: Mon, Jun 24, 2024 12:28:56 PM
 //Codeset: 1252
 requires maya "2025";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.4.0";
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202402161156-0caf8d1269";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 22631)";
-fileInfo "UUID" "8467877B-4E2E-CE9B-1917-0688385865A4";
+fileInfo "UUID" "FB75C618-4F7E-9A7A-A556-D499E6F6376B";
 createNode transform -s -n "persp";
 	rename -uid "82B7AE1D-3644-49B1-7693-27AD97E4AFCF";
 	setAttr ".v" no;
@@ -29717,7 +29717,7 @@ createNode polyAppendVertex -n "polyAppendVertex654";
 	setAttr -s 4 ".d[0:3]"  672 670 669 476;
 	setAttr ".tx" 2;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "2B794B17-4AA6-3CE4-7D78-3AA8A48E2AD5";
+	rename -uid "4C8EB3B0-496F-E5F2-56F1-7999F90ED152";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
